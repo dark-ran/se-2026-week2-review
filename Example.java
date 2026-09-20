@@ -10,6 +10,9 @@ public class Example {
     }
 
     public String reverse(String str, List<String> list) {
+        if (str == null) {
+            throw new IllegalArgumentException("str must not be null");
+        }
         if(list == null)
             list = new ArrayList<>();
         if(str == null) {
