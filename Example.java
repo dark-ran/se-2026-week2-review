@@ -15,7 +15,10 @@ public class Example {
         }
         if(list == null)
             list = new ArrayList<>();
-        if (str.isEmpty()) {  
+        if(str == null) {
+            return null;
+        }
+        if (str.length() == 0) {  
             StringBuffer sb = new StringBuffer();
             for (String s : list) {
                 sb.append(s);
